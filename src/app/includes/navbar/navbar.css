@@ -1,0 +1,132 @@
+.navbar header ul.inactive li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.navbar header ul.inactive {
+
+    height: 0;
+    opacity: 0;
+    background-color: var(--secondary);
+}
+
+.navbar header ul.inactive li {
+    padding-bottom: 1rem;
+
+}
+
+.navbar header ul.inactive li a {
+    color: #f7f7f7;
+
+}
+
+.navbar header ul.active {
+    height: 160px;
+  
+
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.nav_icon_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.nav_icon_container i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar header {
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    align-content: center;
+
+
+}
+
+#nav_icon 
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+
+.navbar header ul.active {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+}
+
+.navbar header ul.active li {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.navbar header ul.active li a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+.navbar header ul.active li a:hover {
+    color: var(--primary);
+}
+
+
+.navbar header ul.active li a.active {
+
+
+
+    color: var(--primary);
+    transition: all .5s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+.navbar header ul.active li a.active:hover {
+
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .logo  
+    {
+       
+        width: 100px;
+        height: auto;
+    }
+}

@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">👨‍💻 Standard Solutions</h1>
+<p align="center">
+  🔧 Building web, mobile, and desktop solutions<br/>
+  💼 Freelancing with passion | 🚀 Tech meets business
+</p>
 
-## Getting Started
+---
 
-First, run the development server:
+### 👋 About Me
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Hi! I'm **Mushinganya Cizungu**, founder of **Standard Solutions** — a freelancing initiative dedicated to delivering high-quality software and digital solutions. I specialize in building **full-stack applications**, **mobile apps**, and offer **mathematics and programming tutoring services** from high school to university level.
+🔭 Currently working on:
+- Scalable web APIs with **Node.js & Express**
+- Cross-platform apps using **React Native**
+- Web Applications using **MERN** and **XAMPP**
+- intelligent agents using **Deep Q-Learning and Neuroevolution**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📍 Based in South Africa | 🌍 Working globally
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧰 Tech Stack
 
-## Learn More
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react)
+![React Native](https://img.shields.io/badge/-ReactNative-20232A?style=flat-square&logo=react)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql)
+![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)
+![GIT](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📂 Featured Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+⭐ **[azaniangames.com](https://azaniangames.com)** — Web platform for games and entertainment  
+📈 Optimized for SEO and fast page loads
 
-## Deploy on Vercel
+⭐ **DQN Snake AI Agent** — Deep Q-learning agent trained to play Snake  
+💻 Tech: Python, TensorFlow, Flask (API)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📬 Let's Connect
+
+- 🌐 [Website (coming soon)](https://standardsolution.infinityfreeapp.com/)
+- 📧 Email: standardsolution704@gmail.com
+
+---
+
+### 💡 Fun Facts
+> I use design patterns for scalable and reusable code 
+> Also a huge fan of clean code and creative user interfaces.
+

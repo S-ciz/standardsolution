@@ -1,0 +1,220 @@
+.book_form {
+    width: 80%;
+
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    padding: 3rem;
+    background-color: var(--secondary);
+
+}
+
+
+textarea 
+{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+
+.book_form form {
+
+    width: 700px;
+    box-shadow: 1px 1px 5px var(--primary);
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.book_form form img {
+    width: 100px;
+    object-fit: cover;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.book_form form button {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+
+    height: 3rem;
+    transition: all .5s ease-in-out;
+}
+
+.book_form form button:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: #f7f7f7;
+    font-weight: bold;
+    transform: scale(1.02);
+    border: none;
+}
+
+
+.book_form form h1 {
+    text-align: center;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+
+.book_form form .genesis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.form_input {
+    width: 100%;
+    height: 2rem;
+    padding-left: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: 1.3rem;
+
+}
+
+
+
+.form_input:focus+label {
+
+
+    transform: translateY(-55px);
+    font-size: .7rem;
+
+}
+
+
+.form_control label {
+
+    transition: all .5s ease-in-out;
+    display: block;
+    margin-left: .3rem;
+    font-size: .9rem;
+    transform: translateY(-45px);
+    color: var(--secondary);
+
+}
+
+section.form-select {
+    margin-top: 2rem;
+
+}
+
+section.form-select select,
+.book_form form input[type='number'] {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    outline: none;
+
+}
+
+section.form-select select>option {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    cursor: pointer;
+}
+
+section.form-select label {
+    display: block;
+    padding-bottom: 1rem;
+
+}
+
+/* Media queires */
+@media (max-width: 950px) {
+    .book_form {
+
+        padding: 1rem;
+
+    }
+
+    .book_form form {
+        width: 100%;
+    }
+
+    .book_form form .genesis {
+        margin: 0;
+        display: grid;
+        width: 100%;
+
+    }
+
+
+
+    .form_input {
+        width: 100%;
+        display: grid;
+      overflow: hidden;
+    
+
+    }
+
+
+    .form_input:focus+label {
+
+
+        transform: translateY(-2.5rem);
+        font-size: .7rem;
+
+    }
+    
+    .form_control 
+    {
+        margin-bottom: 2rem;
+    }
+
+    .form_control label {
+
+        transition: all .5s ease-in-out;
+        display: block;
+        margin-bottom: 2rem;
+        margin-left: .3rem;
+        font-size: .9rem;
+        transform: translateY(-2rem);
+        position: absolute;
+        color: var(--secondary);
+       
+        
+
+    }
+
+}
+
+@media (max-width: 600px){
+    .book_form 
+    {
+        width: 100%;
+    }
+
+    .book_form form  
+    {
+        width: 90vw;
+    }
+}

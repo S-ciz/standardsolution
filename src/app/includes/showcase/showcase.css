@@ -1,0 +1,74 @@
+.showcase {
+    width: 80%;
+    margin: auto;
+    height: 600px;
+    background-image: url('/app.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+.showcase section {
+    flex: 1;
+}
+
+.showcase .showcase-text {
+    background-color: rgba(0, 0, 0, 0.7);
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    padding: 2rem;
+
+}
+
+.showcase .showcase-text h1 {
+    color: var(--primary);
+    font-size: 3rem;
+
+}
+
+.showcase .showcase-text p {
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+.showcase  button 
+{    
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background: none; 
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    height: 3rem;
+    padding: 1rem 2rem; 
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    margin-top: 1rem;
+    border-radius: .2rem;
+   
+}
+
+.showcase  button:hover 
+{  
+    background-color: var(--primary);
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .showcase .showcase-text {
+        flex: content;
+    }
+}
+
+@media (max-width: 600px) {
+    .showcase 
+    {
+        width: 100%;
+    }
+}

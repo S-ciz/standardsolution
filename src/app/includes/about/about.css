@@ -1,0 +1,62 @@
+.about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+    background-color: #f7f7f7;
+    padding: 1rem;
+
+}
+
+.about div {
+    flex: 1;
+}
+
+.about .about-bg {
+
+
+    height: 400px;
+    background-image: url('/focus.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about .about-text {
+    padding: 1rem;
+    line-height: 1.5;
+
+}
+
+.about .about-text h1 {
+    font-size: var(--title_size);
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+
+}
+
+.about .about-text p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.about .about-text p span {
+    font-weight: bold;
+    color: var(--secondary);
+
+}
+
+@media (max-width: 900px) {
+    .about .about-bg {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        width: 100%;
+    }
+}
