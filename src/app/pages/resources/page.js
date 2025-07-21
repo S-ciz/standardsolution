@@ -10,6 +10,28 @@ import { useState, useEffect } from "react";
 
 const Resources = ()=>{
 
+  function truncate(text, max=4)  
+  {
+    if(window.innerWidth > 600)   
+    { 
+
+      if( text.split(" ").length < max) 
+      {
+        return text;
+      }
+      let words = ""
+      for(let i = 0; i < max; i++)
+      {
+        words += text.split(" ")[i] + " "
+      }
+    
+     return words;
+    }
+
+    return text;
+
+  }
+
   const [grade, setGrade] = useState('');
   const [subject, setSubject] = useState('')
   const [papers, setPapers] = useState([])
@@ -26,7 +48,7 @@ const Resources = ()=>{
  }
 
   const displayPapers = papers.map((obj, index)=>  (<div key={index} class="resource_card">
-      <h3> <small> {++index}. </small> Grade: {obj.grade}</h3>
+      <span style={{fontWeight: "bold", color: "#333"}}> <small> {++index}. </small>  { obj.title.split("").length > 1 ? truncate(obj.title) : obj.subject}  </span>
       <span>
         <FontAwesomeIcon color="red" width={50} height={50} icon={faFilePdf}/>
         <small>Mathematics </small>
