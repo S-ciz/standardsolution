@@ -20,6 +20,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Standard Solutions",
   description: "Tutoring and software development company",
+  icons: {
+	  icon: "/logo.webp",
+	  shortcut: "/logo.webp"
+  }
 };
 
 export default function RootLayout({ children }) {
