@@ -140,7 +140,7 @@ ul.list
 {
     display: flex;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 1rem;
 }
 ul.list li 
 {

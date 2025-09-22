@@ -52,6 +52,11 @@ import { useRef,useState } from "react";
       Resources
       </Link>
     </li>
+    <li>
+       <Link href={"/pages/articles"}>
+      Articles
+      </Link>
+    </li>
    
     <li className="book">
        <Link style={{color: "var(--primary)"}} href={"/pages/book"}>
