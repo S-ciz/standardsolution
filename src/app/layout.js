@@ -20,16 +20,21 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Standard Solutions",
   description: "Tutoring and software development company",
+  keywords: ['math tutor', 'programming tutor',
+    'coding', 'passpapers', 'math', 'calculus', 'software agency', 'agency',
+    'high school tutor', 'varsity tutor', 'web design',
+    'logo design', 'marketing', 'social media', 'seo service', 'seo agency', 'website', 'web app', 'landing page', 'content writing',
+  'email marketing', 'web hosting'],
   icons: {
-	  icon: "/logo.webp",
-	  shortcut: "/logo.webp"
+    icon: "/logo.webp",
+    shortcut: "/logo.webp"
   }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     
+
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}

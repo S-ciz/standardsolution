@@ -38,8 +38,31 @@ import { useRef,useState } from "react";
 
 <div className="nav_icon_container"> <span></span>
  {/* <i id="nav_icon" className="fa fa-bars"></i> */}
- <FontAwesomeIcon onClick={toggleNavBar} id="nav_icon"  icon={toggle ? faBars : faTimes}/>
+ <FontAwesomeIcon className="toggler" onClick={toggleNavBar} id="nav_icon"  icon={toggle ? faBars : faTimes}/>
+
+<ul className="list">
+    <li>
+      <Link  href={"/"}>
+      Home
+      </Link>
+    </li>
+   
+    <li>
+       <Link href={"/pages/resources"}>
+      Resources
+      </Link>
+    </li>
+   
+    <li className="book">
+       <Link style={{color: "var(--primary)"}} href={"/pages/book"}>
+      BOOK TODAY
+      </Link>
+    </li>
+</ul>
+
  </div>
+
+
 <ul ref={ul_ref} id="nav_list" className="inactive">
     <li>
       <Link href={"/"}>
@@ -59,6 +82,7 @@ import { useRef,useState } from "react";
       </Link>
     </li>
 </ul>
+
 
 </div>
 </header>

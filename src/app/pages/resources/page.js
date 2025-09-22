@@ -68,7 +68,7 @@ const Resources = ()=>{
 
     <div className="resources_header">
       <div className="control">
-        <label >Grade
+        <label >Grade </label>
           <select onChange={(e)=> setGrade(e.target.value)} required name="" id="grades_select">
             <option value="">-- Select Service --</option>
             <option value="8">Grade 8</option>
@@ -77,16 +77,16 @@ const Resources = ()=>{
             <option value="11">Grade 11</option>
             <option value="12">Grade 12</option>
           </select>
-        </label>
+       
       </div>
       <div className="control">
-        <label >Subject
+        <label >Subject </label>
           <select onChange={(e)=> setSubject(e.target.value)} required name="" id="subjects_select">
             <option value="">-- Select Service --</option>
             <option value="mathematics">Mathematics</option>
 
           </select>
-        </label>
+       
       </div>
 
       <button  id="resources_btn">Filter Past papers</button>

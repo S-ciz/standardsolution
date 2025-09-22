@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div id="contact" className="book_form">
       <form onSubmit={submitForm} id="booking_form">
-        <Image width={50} height={50} src={Logo} alt="logo" />
+        <Image  className='logoImg' width={200} height={200} src={Logo} alt="logo" />
         <h1><span>Contact us</span> <br /> <small style={{ fontSize: "1.2rem", color: "var(--primary)" }}> Please complete the below form to contact us and we’ll make sure the right team member gets back to you.</small> </h1>
 
 

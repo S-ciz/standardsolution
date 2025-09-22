@@ -32,7 +32,7 @@ const BookForm = ()=>{
     <Navbar/>
     <div className="book_form">
   <form onSubmit={submitForm} id="booking_form">
-    <Image width={50} height={50} loading="lazy" src={Logo} alt="logo"/>
+    <Image className="logoImg" width={200} height={200} loading="lazy" src={Logo} alt="logo"/>
     <h1>Booking your session</h1>
 
     <section className="form-select">
