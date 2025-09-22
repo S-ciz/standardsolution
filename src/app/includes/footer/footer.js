@@ -13,13 +13,13 @@ const Footer = ()=>{
                     <li><a target="_blank" href="https://www.instagram.com/stan.dardsolution/">
                    
                     <FontAwesomeIcon icon={faInstagram}/>
-                    Instagram page</a></li>
+                    @standardsol </a></li>
                     <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61578301613242">
                     <FontAwesomeIcon icon={faFacebook}/>
-                    Facebook page</a></li>
+                    @standardsol</a></li>
                     <li><a target="_blank" href="https://www.linkedin.com/company/stan-dard-solutions/">
                     <FontAwesomeIcon icon={faLinkedin}/>
-                    Linkedin page</a></li>
+                   @standsol</a></li>
                 </ul>
                  </section>
 
