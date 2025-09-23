@@ -31,11 +31,11 @@ const Article = () => {
 
             <section className="article">
 
-                <h1>{objArticle.title}</h1>
-                <p>standard solutions production</p>
+                <h1 dangerouslySetInnerHTML={{__html: objArticle.title}}/>
+                <p className="slogan">standard solutions production</p>
 
                 <div className="author">
-                    <Image width={120} alt="article" loading="lazy" height={100} src={logo} />
+                    <Image priority={true} width={120} alt="article" loading="eager" height={100} src={logo} />
                     <small> {objArticle.date}</small>
                 </div>
 
@@ -44,9 +44,9 @@ const Article = () => {
                     {/* <Image className="article_img" src={objArticle.img} alt="article graphics" width={300} height={300} /> */}
                 </div>
 
-                <article>
-                   {objArticle.text}
-                </article>
+                <article dangerouslySetInnerHTML={{__html: objArticle.text}}/>
+                
+               
 
             </section>
 

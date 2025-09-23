@@ -4,29 +4,43 @@ import "./article.css"
 import Navbar from "@/app/includes/navbar/navbar"
 import Footer from "@/app/includes/footer/footer"
 import Image from "next/image"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 const Article = ({ objArticle }) => {
 
+
+
+    const titleRef = useRef()
+
     function navigateToArticle() {
         sessionStorage.setItem('blog', JSON.stringify({
-             title: objArticle.title.rendered, 
-             text: objArticle.excerpt.rendered.replace(/<\/?p>/g, ''),
-             date: objArticle.date.split(':')[0],
-             img: objArticle.meta.advanced_seo_description
-             
-             }))
-        
+            title: objArticle.title.rendered,
+            text: objArticle.excerpt.rendered,
+            date: objArticle.date.split(':')[0],
+            img: objArticle.meta.advanced_seo_description
+
+        }))
+
         window.location.href = "/pages/article"
 
     }
+    const stripHtml = (html) => {
+        const div = document.createElement("div");
+        div.innerHTML = html;
+
+        if(div.textContent.length < 20)
+        {
+            return div.textContent + '...' || div.innerText + '...' 
+        }
+        return div.textContent.slice(0,20) || div.innerText.slice(0,20) || "";
+    };
+
 
     return <div className="article">
-        <Image loading="lazy" className="article_image" alt={objArticle.title} src={objArticle.meta.advanced_seo_description} width={400} height={300} />
+        <Image priority={true} className="article_image" alt={objArticle.title} src={objArticle.meta.advanced_seo_description} width={400} height={300} />
         <div className="article_content">
-            <h2 className="article_title"> {objArticle.title.rendered}</h2>
+            <h2 className="article_title"> {stripHtml(objArticle.title.rendered)} </h2>
             <small className="article_date">{objArticle.date.split(':')[0]}</small>
-            <article className="article_text"> {objArticle.excerpt.rendered.replace(/<\/?p>/g, '')} </article>
             <button onClick={navigateToArticle} className="article_btn">Read more</button>
         </div>
 

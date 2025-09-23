@@ -16,7 +16,7 @@
 
 }
 
-.article p {
+.article p.slogan {
     color: var(--primary);
     font-size: 1.8rem;
     padding-top: .3rem;

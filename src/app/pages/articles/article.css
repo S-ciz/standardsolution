@@ -96,6 +96,8 @@
     text-transform: capitalize;
     border-radius: .5rem;
     cursor: pointer;
+    margin-top: .5rem;
+
 }
 
 @media (max-width:600px) {
