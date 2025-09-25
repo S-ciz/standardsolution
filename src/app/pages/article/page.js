@@ -20,7 +20,7 @@ const Article = () => {
             setObjArticle(blog)
         }
 
-    })
+    }, [])
 
 
 
@@ -40,11 +40,11 @@ const Article = () => {
                 </div>
 
 
-                <div style={{backgroundImage: `url(${objArticle.img})`}} className="article_img_wrapper">
-                    {/* <Image className="article_img" src={objArticle.img} alt="article graphics" width={300} height={300} /> */}
-                </div>
+                {/* <div style={{backgroundImage: `url(${objArticle.img})`}} className="article_img_wrapper">
+         
+                </div> */}
 
-                <article dangerouslySetInnerHTML={{__html: objArticle.text}}/>
+                <article className="blog_content" dangerouslySetInnerHTML={{__html: objArticle.text}}/>
                 
                
 

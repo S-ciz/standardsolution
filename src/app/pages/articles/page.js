@@ -15,7 +15,7 @@ const Article = ({ objArticle }) => {
     function navigateToArticle() {
         sessionStorage.setItem('blog', JSON.stringify({
             title: objArticle.title.rendered,
-            text: objArticle.excerpt.rendered,
+            text: objArticle.content.rendered,
             date: objArticle.date.split(':')[0],
             img: objArticle.meta.advanced_seo_description
 
@@ -59,11 +59,12 @@ const Articles = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => {
+                console.log(data[0])
                 setArticles(data)
 
             })
 
-    }, [])
+    }, [listArticles])
 
     const imgUrl = "https://images.unsplash.com/photo-1758320576708-a60c856c34c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
 
