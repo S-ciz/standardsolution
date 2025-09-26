@@ -80,6 +80,11 @@ import { useRef,useState } from "react";
       Resources
       </Link>
     </li>
+      <li>
+       <Link href={"/pages/articles"}>
+      Articles
+      </Link>
+    </li>
    
     <li>
        <Link className="active" href={"/pages/book"}>
