@@ -64,4 +64,13 @@ footer .footer
     {
         width: 100%;
     }
+
+    footer .footer 
+{
+
+    display: flex;
+   flex-direction: column;
 }
+
+}
+
